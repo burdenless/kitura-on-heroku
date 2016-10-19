@@ -1,1 +1,1 @@
-web: .build/release/myFirst
+web: .build/release/kitura-on-heroku
