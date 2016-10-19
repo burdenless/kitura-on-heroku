@@ -3,5 +3,10 @@
   "description": "Kitura myFirst app made compatible with Heroku",
   "repository": "https://github.com/byt3smith/kitura-on-heroku",
   "logo": "https://raw.githubusercontent.com/joaoamaral/KituraHeroku/master/KituraHeroku.png",
-  "keywords": ["web", "swift", "kitura"]
+  "keywords": ["web", "swift", "kitura"],
+  "buildpacks": [
+    {
+      "url": "https://github.com/kylef/heroku-buildpack-swift"
+    }
+  ]
 }
