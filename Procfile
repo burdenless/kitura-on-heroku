@@ -1,0 +1,1 @@
+web: ./.build/debug/myFirst
