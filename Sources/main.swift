@@ -1,6 +1,6 @@
 import Kitura
 import HeliumLogger
-import Environment
+import Foundation
 
 HeliumLogger.use()
 
@@ -12,7 +12,7 @@ router.get("/") {
    next()
 }
 
-let port = Int(Env["PORT"]!)
+let port = Int(ProcessInfo.processInfo.environment["PORT"] ?? "8090") ?? 8090
 
-Kitura.addHTTPServer(onPort: port!, with: router)
+Kitura.addHTTPServer(onPort: port, with: router)
 Kitura.run()
