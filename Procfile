@@ -1,1 +1,1 @@
-web: ./.build/debug/myFirst
+web: .build/debug/myFirst
